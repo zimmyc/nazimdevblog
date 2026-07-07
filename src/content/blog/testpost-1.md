@@ -5,8 +5,8 @@ pubDate: 2026-07-07
 description: 'This is really hard tbh. Or im just stupid'
 author: 'Nazim chan'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
+    heroImage: 'miko'
+    alt: 'This is miko'
 tags: ["astro", "blogging", "learning in public"]
 ---
 # My First Blog Post
