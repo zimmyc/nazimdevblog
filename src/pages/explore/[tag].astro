@@ -43,9 +43,9 @@ const posts = (await getCollection('blog')).filter(p => (p.data.tags ?? []).incl
                   <FormattedDate date={post.data.pubDate} />
                 </div>
                 <div>
-                  {post.data.tags?.map(t => (
-                    <TagPill tag={t} href={`/explore/${encodeURIComponent(t)}/`} />
-                  ))}
+                  {post.data.tags?.map((t: string) => (
+                      <TagPill tag={t} href={`/explore/${encodeURIComponent(t)}/`} />
+                    ))}
                 </div>
               </li>
             ))}

@@ -35,7 +35,7 @@ const posts = (await getCollection('blog')).sort((a,b)=>b.data.pubDate.valueOf()
 							</div>
 							<p style="margin:0.25rem 0">{post.data.description}</p>
 							<div>
-								{post.data.tags?.map(t => (
+								{post.data.tags?.map((t: string) => (
 									<TagPill tag={t} href={`/explore/${encodeURIComponent(t)}/`} />
 								))}
 							</div>
