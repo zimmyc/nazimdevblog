@@ -1,12 +1,11 @@
 --- 
 #THIS IS FRONTMATTER!! THIS INFORMATION ABOUT THE POST CAN BE USED AND ACCESS LATER AND ENHANCE MY SITE
 title: 'My First Tester Post'
-pubDate: 2026-07-07
+pubDate: '2026-07-07'
 description: 'This is really hard tbh. Or im just stupid'
 author: 'Nazim chan'
-image:
-    heroImage: 'miko'
-    alt: 'This is miko'
+heroImage: '../../assets/miko.jpg'
+heroImageAlt: 'This is miko'
 tags: ["astro", "blogging", "learning in public"]
 ---
 # My First Blog Post

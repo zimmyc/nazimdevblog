@@ -1,0 +1,33 @@
+---
+const { tag, href } = Astro.props;
+
+// compute simple deterministic color values server-side
+const hash = Array.from(String(tag)).reduce((acc, c) => acc * 31 + c.charCodeAt(0), 0);
+const hue = Math.abs(hash) % 360;
+const bg = `hsl(${hue} 85% 85%)`;
+const fg = `hsl(${hue} 30% 15%)`;
+---
+
+<style>
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    margin: 0 0.25rem 0.25rem 0;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    line-height: 1;
+    text-decoration: none;
+    color: inherit;
+  }
+  .tag:hover { transform: translateY(-1px); }
+</style>
+
+{href ? (
+  <a class="tag" href={href} style={`background:${bg}; color:${fg};`}>
+    {tag}
+  </a>
+) : (
+  <span class="tag" style={`background:${bg}; color:${fg};`}>
+    {tag}
+  </span>
+)}

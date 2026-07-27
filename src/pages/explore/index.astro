@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import TagPill from '../../components/TagPill.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+
+const posts = await getCollection('blog');
+
+// aggregate tags
+const tagMap = new Map();
+for (const post of posts) {
+  for (const t of post.data.tags ?? []) {
+    tagMap.set(t, (tagMap.get(t) || 0) + 1);
+  }
+}
+const tags = Array.from(tagMap.entries()).sort((a,b)=>b[1]-a[1]);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`Explore — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Explore Tags</h1>
+      <p>Browse posts by topic.</p>
+      <div>
+        {tags.map(([tag, count]) => (
+          <a href={`/explore/${encodeURIComponent(tag)}/`} style="text-decoration:none">
+            <TagPill tag={tag} href={`/explore/${encodeURIComponent(tag)}/`} />
+            <span style="color:var(--gray); margin-left:0.5rem">({count})</span>
+          </a>
+        ))}
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
