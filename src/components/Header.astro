@@ -47,7 +47,7 @@ import HeaderLink from './HeaderLink.astro';
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
+		padding: 0 0.75em;
 		background: #2d1e2f;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
@@ -66,17 +66,20 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	.brand-link img {
 		display: block;
-		max-height: 72px;
+		max-height: 74px;
 		width: auto;
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 2.2rem;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 0.9em 0.6em;
 		color: #F3DCA1;
+		font-size: 1.0rem;
+		font-weight: 700;
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
