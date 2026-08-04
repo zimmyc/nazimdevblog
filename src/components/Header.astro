@@ -1,11 +1,12 @@
 ---
-import { SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import logo from '../assets/nazimdevdotblogLogo.png';
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/" class="brand-link"><Image src={logo} alt="Nazim Dev Blog" width={logo.width} height={logo.height} /></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -47,7 +48,7 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
+		background: #2d1e2f;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
@@ -59,6 +60,15 @@ import HeaderLink from './HeaderLink.astro';
 	h2 a.active {
 		text-decoration: none;
 	}
+	.brand-link {
+		display: inline-flex;
+		align-items: center;
+	}
+	.brand-link img {
+		display: block;
+		max-height: 72px;
+		width: auto;
+	}
 	nav {
 		display: flex;
 		align-items: center;
@@ -66,13 +76,13 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: #F3DCA1;
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		border-bottom-color: #000000;
 	}
 	.social-links,
 	.social-links a {
