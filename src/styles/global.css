@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -21,11 +23,11 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: #2c363b;
+	background: #1d1b1b;
 	color: #ffffff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: #e2dede;
 	font-size: 20px;
 	line-height: 1.7;
 }
