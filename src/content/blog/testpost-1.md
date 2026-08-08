@@ -6,7 +6,7 @@ description: 'This is really hard tbh. Or im just stupid'
 author: 'Nazim chan'
 heroImage: '../../assets/miko.jpg'
 heroImageAlt: 'This is miko'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["tag1", "tag3", "tag5"]
 ---
 # My First Blog Post
 
