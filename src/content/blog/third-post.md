@@ -3,7 +3,7 @@ title: 'Third post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 22 2022'
 heroImage: '../../assets/blog-placeholder-2.jpg'
-tags: ["astro", "events"]
+tags: ["tag1", "tag2"]
 ---
 
 hi
