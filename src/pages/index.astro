@@ -21,7 +21,7 @@ const posts = (await getCollection('blog')).sort((a,b)=>b.data.pubDate.valueOf()
 		<main>
 			<h1 style="color: #d14280;">Where am I?</h1>
 			<p>
-				nazimdev.blog is a is a space ive created to think more about my thoughts and share my experiences to help people similar to me- people trying to navigate the gaming industry. 
+				nazimdev.blog is a is a space I've created to think more about my thoughts and share my experiences to help people similar to me- people trying to navigate the gaming industry. 
 			</p>
 
 			<p>
@@ -30,19 +30,19 @@ const posts = (await getCollection('blog')).sort((a,b)=>b.data.pubDate.valueOf()
 			
 			<section>
 				<h2 style="color: #d14280;">Latest posts</h2>
-				<div class="grid gap-4 md:grid-cols-2">
+				<div class="latest-posts">
 					{posts.map(post => (
-						<article class="group rounded-2xl border border-white/10 bg-white/5 p-4 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(209,66,128,0.25)]">
-							<a href={`/blog/${post.id}/`} class="block text-inherit no-underline">
+						<article class="post-card">
+							<a href={`/blog/${post.id}/`} class="post-card-link">
 								{post.data.heroImage && (
-									<Image class="mb-3 rounded-xl object-cover transition duration-500 group-hover:scale-[1.03]" src={post.data.heroImage} width={360} height={180} alt="" />
+									<Image class="post-card-image" src={post.data.heroImage} width={360} height={180} alt="" />
 								)}
-								<h3 class="text-[#d14280] transition-colors duration-300 group-hover:text-white">{post.data.title}</h3>
+								<h3 class="post-card-title">{post.data.title}</h3>
 							</a>
-							<div class="mb-1 text-sm text-[rgb(var(--gray))] transition-colors duration-300 group-hover:text-white">
+							<div class="post-card-meta">
 								<FormattedDate date={post.data.pubDate} />
 							</div>
-							<p class="mt-1 mb-1">{post.data.description}</p>
+							<p class="post-card-description">{post.data.description}</p>
 							<div>
 								{post.data.tags?.map((t: string) => (
 									<TagPill tag={t} href={`/explore/${encodeURIComponent(t)}/`} />
