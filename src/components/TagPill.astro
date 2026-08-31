@@ -1,7 +1,7 @@
 ---
 const { tag, href } = Astro.props;
 
-// compute simple deterministic color values server-side
+// colours
 const hash = Array.from(String(tag)).reduce((acc, c) => acc * 31 + c.charCodeAt(0), 0);
 const hue = Math.abs(hash) % 360;
 const bg = `hsl(${hue} 85% 85%)`;

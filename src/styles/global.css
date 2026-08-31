@@ -25,7 +25,6 @@ body {
 	color: #ffffff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: #e2dede;
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -90,7 +89,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: #ffffff;
 	line-height: 1.2;
 }
 h1 {
