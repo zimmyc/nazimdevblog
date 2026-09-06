@@ -1,0 +1,145 @@
+---
+title: 'What I Learned After Finally Winning a Game Jam'
+description: 'Why you should enter as many jams as you can and a few personal tips'
+pubDate: 'August 22 2026'
+heroImage: '../../assets/pics-gamejams/gamejamwin2.jpg'
+tags: ["events", "advice",]
+---
+import { Image } from 'astro:assets';
+import rccfmenu from '../../assets/pics-gamejams/ravecagecyberfunkmainmenu.png';
+import cbmenu from '../../assets/pics-gamejams/circuitbreakermainmenu.png';
+import rrgameloop from '../../assets/pics-gamejams/reefreliefgameloop.png';
+import pinkscreenshot from '../../assets/pics-gamejams/pinkscreenshot.png';
+import celestetutorial from '../../assets/pics-gamejams/celestetutorial.jpg';
+
+<p>
+After three unsuccessful attempts in my university’s internal game jam, I’d never been more determined to win- especially 
+seeing as this was my final shot before graduating. Before it started, I spent some time looking at past jams, 
+specifically the other entries and trying to figure out why they won and I didn't. 
+What was it that gave all these games that edge? 
+</p>
+
+<h5 style="color: #d14280;">Wait, what's a game jam?</h5>
+
+<p>
+In case you don't know, a game jam is fun, <i>intense</i> event where developers create a game from scratch around a shared theme. 
+They are always under time constraints, ranging from 24 hours to 7 days, which means planning and time managment is more important 
+than you'd realise!
+
+More importantly, they're an oppurtunity to be creative and explore unconvential ideas with no stakes. 
+In my second year of university, we had a module called “Experimental Games” and we were told it was our 
+chance to make whatever we wanted! It was a space to finally get all those crazy ideas out of our heads 
+before embarking on our final major projects in third year, which would require something more grounded. 
+That's essentially how I see game jams- places to vent your wildest ideas, so your main projects end up more 
+focused because you’ve already done the experimenting and learning elsewhere.
+
+<Image src={pinkscreenshot} alt="This Game Was Made with A Pink Sparkly Gel Pen" />
+
+This is a game I made with a friend for this module- a frutiger aero inspired shooter. I never used the colour pink after this, but it's on my 
+<a href="https://dalooola.itch.io/pinksparklyglitterpen">itch.io page</a> :). 
+
+</p>
+
+<h5 style="color: #d14280;">Sounds fun! Where can I sign up?</h5>
+<p>
+There are plenty of game jams happening all over the place! Theres a whole plethora of them online- most 
+notably <a href="https://ludumdare.com/">Ludum Dare</a> and there's often a tonne happening over on <a href="https://itch.io/jams">itch. io</a>. 
+There’s also the <a href="https://ludumdare.com/">Global Game Jam</a>, which runs events both online and in person. 
+Their calendar updates often, so it’s worth checking regularly since they host jams across a huge range of locations. 
+You can also look at past themes and download games people have made to get a feel for what it's like!
+</p>
+
+<h5 style="color: #d14280;">I've entered, what now?</h5>
+<p>
+Now it's time to prepare! Without knowing the theme, there's only so much you can do, but you need to get used to doing things 
+you don't normally do since that's what game jams force you to do! If you're a programmer, make the same system in both 2D and 3D. 
+If you're an artist, draw something totally out of your comfort zone with a randomised colour palette. 
+If you're a UI designer, make an asset pack, but restrict yourself by not being able to use your most used tool. 
+Whatever you do, just prepare to be flexible and work in ways you haven't before! 
+
+The other thing to mention is your team- are you going in solo or do you want to work with others? This is a personal choice, 
+but you'll always get further when you're with a team! If you don’t know anyone or feel nervous about reaching out, remember 
+that <b>loads of people are in the exact same position as you</b>. Plenty of people want to join a team, but feel unsure about 
+how to approach others or where to start. It's time to be brave and first step- do for someone else what you’d want them to do for you! 
+Reach out, post on Reddit or in the official Discord servers, make yourself easy to approach or shoot someone a friendly DM. 
+And make it fun! Put together a small profile or mini‑CV with your background, what you specialise in and what you’re looking for. 
+Everyone is here for the same reason: to make games, make friends and have a good time!
+
+<i>That being said, when working with strangers on the internet please be careful! People can be weird and stranger danger is still a thing! </i>
+</p>
+<h5 style="color: #d14280;">Alright, I'm ready! How do I win?</h5>
+<p>
+There's never going to be a definitive "how to win", 
+but there are some tips I've gathered over the years which I think would help.
+</p>
+<h5 style="color: #4785A1;">Start small!</h5>
+<p> 
+It's easy, especially when you're in a group, to decide on so many ideas you want to implement- 
+skill trees, a magic system, enemies that adapt, 5 whole levels, cutscenes etc. Coming up with a bunch of mechanics or ideas 
+you want to shove into the theme isn't the best approach. Instead, focus on coming up with a <b>core game loop</b> and once that 
+is fully developed you can add extra features on top. Doing this also helps avoid scope creep since the core of the game is done 
+and everything else is just extra! Here's am example from our winning game, <a href="https://blue-room.itch.io/reef-relief">Reef Relief</a>:
+
+<Image src={rrgameloop} alt="Reef Relief game loop" />
+Our game loop only had 3 parts, but loops can be bigger depending on your game. The important thing is that you have a loop that is fun, engaging and makes players
+want more. After our loop continued for a set amount of time, the end screen would appear and you'd get your score! I want to mention that after we had this functioning
+loop with a simple, placeholder minigame inside Unity, we were able to look at how much time we had left and decide what extra features we wanted to add and
+how complex we could make the minigames, which is how we were able to manage our time effectively. 
+
+</p>
+
+<h5 style="color: #4785A1;">Your menus should never be an afterthought!</h5>
+<p> 
+In <i>my opinion</i>, a game could be extremely detailed, look and sound incredible, have a solid gameplay loop and 
+genuinley be fun and still be beaten by a smaller game if that smaller game had a main menu, start button and end screen. 
+Games feel much more like complete experiences when they have those defined start and end points. 
+ 
+Imagine you were having a birthday and your best friend brought a cake to you. Would you rather a big, extravagant, 3-tiered cake 
+with candles and decorations that they delivered to you with their bare hands so the bottom was all mashed and kinda falling apart, 
+then when they set it down there's cake all over their hands. Then after setting it down everyone's clapping, but they're not letting 
+their hands touch when they clap because that would make the cake on their hands splatter everywhere and they really have to go wash 
+their hands, but can't really leave until everyone's done clapping. And now you're blowing out your array of artisinal candles and you 
+can really see the craftmanship in this cake as you get up close, but all you can think about is their cake covered hands and how the 
+bottom of the cake probably has near-perfect indents of their hands. 
+ 
+Or, would you rather they delivered a smaller, yet still well crafted, cake that's packaged in a cute little box that has a silk ribbon? 
+And you get to appreciate the dainty packaging before pulling away the ribbon and releasing the cake's sweet aroma. 
+Then your friend goes ahead and lights the candles before everyone sings and claps, with cake-free hands.
+
+This is how I imagine games with menus, versus those without- make the right choice. 
+
+Your main menu doesn't have to be super fancy and animated- a simple "Play" and "Quit" button beneath your title is all you need! 
+I've included some examples:
+
+<Image src={rccfmenu} alt="Rave Cage Cyberfunk main menu" />
+This is the main menu from the overall 1st place winner of the Brackeys Game Jam 2025.2- 
+<a href="https://pebblewheat.itch.io/rave-cage-cyberfunk">Rave Cage Cyberfunk</a>, by <a href="https://pebblewheat.itch.io/">PebbleWheat</a>. 
+At it's core- it is simple! A pretty background, logo and 2 buttons.
+That's all you need! But... you don't want to make a different scene?
+
+<Image src={cbmenu} alt="Circuit Breaker main menu" />
+This main menu is from <a href="https://zelophed.itch.io/circuit-breaker">Circuit Breaker</a>, by <a href="https://zelophed.itch.io/">zelophed</a>,
+which was part of "Mark's favourites" in the GMTK Game Jam 2025. The menu appears on top of the actual game, disappearing
+when you click play. A simple, but effective way to have a main menu that prevents the player
+feel like they're being thrown into the game without any warning. 
+
+</p>
+<h5 style="color: #4785A1;">Tutorialise!</h5>
+<p> 
+This tip follows the same idea as the last one- the idea that you want your games to feel as complete as possible and that includes having a tutorial! There are certain 
+degrees to how much you actually need a tutorial- for example if your game is a platformer, you can get away with just displaying the controls. 
+But if your game has unique controls or is a little complex, you should consider having a more thought-out explanation of how to play, in the form of a simple pop-up. I'm
+not saying always have a full-blown tutorial level because that can be too much work, but just remember
+you can't always be there when people play the game to explain to them the controls or how it works! Yes, you can have it in the description of the game,
+but personally I hate having to keep going back and checking what to do. 
+This is an example from Celeste of a <i>diagetic</i> tutorial:
+
+<Image src={celestetutorial} alt="Celeste tutorial" />
+
+That about does it for some of my tips! But, as an academic, It's important to get multiple opinions and perspectives, so I've asked 
+some of my peers and mentors for their top tips!
+
+<h5 style="color: #d14280;">What do other people think?</h5>
+
+</p>
+
